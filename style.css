@@ -1,0 +1,318 @@
+/* --- RESET E ESTILOS GERAIS --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #222222;
+    background-color: #ffffff;
+}
+
+/* Acessibilidade - Link para pular ao conteúdo */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    z-index: 1000;
+}
+.skip-link:focus {
+    top: 0;
+}
+
+/* Layout Container */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Cores e Fundo */
+.bg-light {
+    background-color: #f4f6f9;
+}
+
+/* --- CABEÇALHO E MENU --- */
+.header {
+    background-color: #4a154b; /* Tom roxo UCPel */
+    color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-ucpel {
+    font-weight: bold;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+
+.logo-evento {
+    font-size: 0.85rem;
+    color: #d1c4e9;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 8px;
+    transition: color 0.3s;
+}
+
+.nav a:hover, .nav a:focus {
+    color: #00bcd4;
+    outline: 2px solid #00bcd4;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/* --- HERO SLIDESHOW --- */
+.hero-section {
+    position: relative;
+    overflow: hidden;
+    height: 70vh;
+    min-height: 400px;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slide-content {
+    color: #ffffff;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+}
+
+.slide-content h1, .slide-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.slide-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.prev { left: 15px; }
+.next { right: 15px; }
+
+/* --- BOTÕES (CTA) --- */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-primary {
+    background-color: #00838f; /* Contraste adequado com texto branco */
+    color: #ffffff;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #005662;
+}
+
+.btn-secondary {
+    background-color: #4a154b;
+    color: #ffffff;
+}
+
+.btn-secondary:hover {
+    background-color: #310c32;
+}
+
+.btn-sm {
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+.btn-lg {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+}
+
+/* --- SEÇÕES & CARDS --- */
+.section {
+    padding: 50px 0;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #4a154b;
+    border-bottom: 3px solid #00838f;
+    display: inline-block;
+}
+
+.sobre-grid, .localizacao-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-meta {
+    font-size: 0.9rem;
+    color: #555555;
+    margin: 8px 0;
+    font-weight: bold;
+}
+
+.badge {
+    background: #4a154b;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    width: fit-content;
+    margin-bottom: 10px;
+}
+
+.card-img-round {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 15px auto;
+}
+
+.cta-section {
+    background-color: #4a154b;
+    color: white;
+}
+
+.cta-section h2 {
+    color: white;
+    border-bottom-color: #ffffff;
+}
+
+.text-center { text-align: center; }
+
+/* --- RODAPÉ --- */
+.footer {
+    background-color: #1a1a1a;
+    color: #cccccc;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+
+/* --- RESPONSIVIDADE (MOBILE) --- */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #4a154b;
+    }
+
+    .nav.active {
+        display: block;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .sobre-grid, .localizacao-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .slide-content h1, .slide-content h2 {
+        font-size: 1.8rem;
+    }
+}

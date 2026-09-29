@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana Tecnológica UCPel 2026</title>
+    <meta name="description" content="Semana Tecnológica da UCPel 2026 - Tecnologia, Inovação e Conhecimento.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Acessibilidade: Atalho para ir ao conteúdo principal -->
+    <a href="#conteudo-principal" class="skip-link">Ir para o conteúdo principal</a>
+
+    <!-- Cabeçalho & Navegação -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <span class="logo-ucpel">UCPEL</span>
+                <span class="logo-evento">Semana Tecnológica 2026</span>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu de navegação" aria-expanded="false">
+                &#9776;
+            </button>
+            <nav class="nav" id="mainNav">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#programacao">Programação</a></li>
+                    <li><a href="#palestrantes">Palestrantes</a></li>
+                    <li><a href="#oficinas">Oficinas</a></li>
+                    <li><a href="#inscricoes">Inscrições</a></li>
+                    <li><a href="#localizacao">Localização</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo-principal">
+        <!-- 3.1 Início / Slideshow -->
+        <section id="inicio" class="hero-section">
+            <div class="carousel">
+                <div class="slides">
+                    <div class="slide active" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=80');">
+                        <div class="slide-content container">
+                            <h1>Semana Tecnológica UCPel 2026</h1>
+                            <p>Tecnologia • Inovação • Conhecimento</p>
+                            <a href="#inscricoes" class="btn btn-primary">Inscreva-se Agora</a>
+                        </div>
+                    </div>
+                    <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80');">
+                        <div class="slide-content container">
+                            <h2>Palestras Inspiradoras</h2>
+                            <p>Aprenda com especialistas renomados da área de tecnologia.</p>
+                            <a href="#palestrantes" class="btn btn-secondary">Conheça os Palestrantes</a>
+                        </div>
+                    </div>
+                    <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=80');">
+                        <div class="slide-content container">
+                            <h2>Oficinas Práticas</h2>
+                            <p>Desenvolva novas habilidades em workshops mão na massa.</p>
+                            <a href="#oficinas" class="btn btn-secondary">Ver Oficinas</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="prev" id="prevSlide" aria-label="Slide anterior">&#10094;</button>
+                <button class="next" id="nextSlide" aria-label="Próximo slide">&#10095;</button>
+            </div>
+        </section>
+
+        <!-- 3.2 Sobre o Evento -->
+        <section id="sobre" class="section container">
+            <h2>Sobre o Evento</h2>
+            <div class="sobre-grid">
+                <div>
+                    <p>A <strong>Semana Tecnológica da UCPel 2026</strong> é um evento promovido pela Universidade Católica de Pelotas com o objetivo de integrar estudantes, professores e profissionais do mercado de tecnologia e inovação.</p>
+                    <p>Com uma programação diversificada composta por palestras, oficinas práticas e networking, o evento aborda as principais tendências do setor tecnológico, preparando os acadêmicos para os desafios da transformação digital.</p>
+                </div>
+                <div class="info-card">
+                    <h3>Detalhes Rápidos</h3>
+                    <ul>
+                        <li><strong>Data:</strong> Outubro de 2026</li>
+                        <li><strong>Local:</strong> Campus III - UCPel, Pelotas/RS</li>
+                        <li><strong>Público:</strong> Estudantes, Professores e Profissionais de TI</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3.3 Programação -->
+        <section id="programacao" class="section bg-light">
+            <div class="container">
+                <h2>Programação</h2>
+                <div class="cards-grid">
+                    <article class="card">
+                        <span class="badge">09:00</span>
+                        <h3>Palestra de Abertura</h3>
+                        <p class="card-meta">Auditório Dom Antônio Zattera</p>
+                        <p>Tendências Tecnológicas e o Futuro do Desenvolvimento de Software.</p>
+                    </article>
+                    <article class="card">
+                        <span class="badge">10:30</span>
+                        <h3>Oficina Prática</h3>
+                        <p class="card-meta">Laboratório de Informática 2</p>
+                        <p>Desenvolvimento Web Acessível e Responsivo com HTML5/CSS3.</p>
+                    </article>
+                    <article class="card">
+                        <span class="badge">14:00</span>
+                        <h3>Painel de Debates</h3>
+                        <p class="card-meta">Auditório Dom Antônio Zattera</p>
+                        <p>Inteligência Artificial Aplicada no Mercado de Trabalho Contemporâneo.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3.4 Palestrantes -->
+        <section id="palestrantes" class="section container">
+            <h2>Palestrantes</h2>
+            <div class="cards-grid">
+                <article class="card text-center">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80" alt="Foto da palestrante Dra. Ana Silva" class="card-img-round">
+                    <h3>Dra. Ana Silva</h3>
+                    <p class="card-meta">Engenharia de Software</p>
+                    <p>Especialista em Arquitetura de Microsserviços e Acessibilidade Web.</p>
+                </article>
+                <article class="card text-center">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80" alt="Foto do palestrante Prof. Carlos Mendes" class="card-img-round">
+                    <h3>Prof. Carlos Mendes</h3>
+                    <p class="card-meta">Ciência de Dados & IA</p>
+                    <p>Pesquisador focado em Machine Learning e Inteligência Artificial Responsável.</p>
+                </article>
+                <article class="card text-center">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=300&q=80" alt="Foto da palestrante Eng. Mariana Costa" class="card-img-round">
+                    <h3>Eng. Mariana Costa</h3>
+                    <p class="card-meta">Cybersecurity</p>
+                    <p>Especialista em Segurança da Informação e Proteção de Dados (LGPD).</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- 3.5 Oficinas -->
+        <section id="oficinas" class="section bg-light">
+            <div class="container">
+                <h2>Oficinas</h2>
+                <div class="cards-grid">
+                    <article class="card">
+                        <h3>Oficina 01: CSS Grid & Flexbox</h3>
+                        <p>Aprenda a construir layouts modernos e totalmente responsivos do zero.</p>
+                        <p class="card-meta">Data: 15/10/2026 | Horário: 10:30 | Vagas: 30</p>
+                        <a href="#inscricoes" class="btn btn-secondary btn-sm">Saiba Mais</a>
+                    </article>
+                    <article class="card">
+                        <h3>Oficina 02: Git e GitHub</h3>
+                        <p>Domine o controle de versão de código e fluxo de trabalho colaborativo.</p>
+                        <p class="card-meta">Data: 16/10/2026 | Horário: 14:00 | Vagas: 25</p>
+                        <a href="#inscricoes" class="btn btn-secondary btn-sm">Saiba Mais</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3.6 Inscrições -->
+        <section id="inscricoes" class="section cta-section text-center">
+            <div class="container">
+                <h2>Inscrições Abertas!</h2>
+                <p>Garanta sua vaga na Semana Tecnológica UCPel 2026. As vagas para as oficinas são limitadas.</p>
+                <a href="https://ucpel.edu.br" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">Realizar Inscrição</a>
+            </div>
+        </section>
+
+        <!-- 3.7 Localização -->
+        <section id="localizacao" class="section container">
+            <h2>Localização</h2>
+            <div class="localizacao-grid">
+                <div>
+                    <h3>Onde será realizado?</h3>
+                    <p><strong>Universidade Católica de Pelotas (UCPel)</strong></p>
+                    <p>Rua Gonçalves Chaves, 373 - Centro</p>
+                    <p>Pelotas - RS, CEP 96015-560</p>
+                    <p>Auditório Dom Antônio Zattera e Laboratórios do Campus I e III.</p>
+                </div>
+                <div class="map-placeholder">
+                    <iframe title="Mapa de Localização da UCPel" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3393.187309990527!2d-52.3429399!3d-31.7721389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9511b5accd8b2ff1%3A0x6b744b3fb9c8a9ed!2sUCPel%20-%20Universidade%20Cat%C3%B3lica%20de%20Pelotas!5e0!3m2!1spt-BR!2sbr!4v1680000000000!5m2!1spt-BR!2sbr" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3.8 Contato -->
+        <section id="contato" class="section bg-light">
+            <div class="container text-center">
+                <h2>Canais de Contato</h2>
+                <p>Ficou com alguma dúvida? Entre em contato com a comissão organizadora:</p>
+                <div class="contato-links">
+                    <p>📧 E-mail: <a href="mailto:semanatecnologica@ucpel.edu.br">semanatecnologica@ucpel.edu.br</a></p>
+                    <p>📞 Telefone: (53) 2128-8000</p>
+                    <p>🌐 Instagram: <a href="https://instagram.com/ucpel" target="_blank" rel="noopener noreferrer">@ucpel</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 3.9 Rodapé -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p><strong>Universidade Católica de Pelotas - UCPel</strong></p>
+            <p>Projeto Integrador IV-A | Desenvolvimento de Landing Page Institucional</p>
+            <p>&copy; 2026 UCPel. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
